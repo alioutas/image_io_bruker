@@ -100,13 +100,15 @@ def readParticleFile(file_path):
 
     return dff
 
-# %%
-#############################################################
-# Save a dataframe (df) to the file_path 
-# as a binary particle.dat or particle.dat.gz file
-# -----------------------------------------------------------
 
 def writeParticleFile(df, file_path, file_ext=".dat"):
+
+    #############################################################
+    # Save a dataframe (df) to the file_path 
+    # as a binary particle.dat or particle.dat.gz file
+    # Author: Antonios Lioutas
+    # -----------------------------------------------------------
+
     num_cols = len(df.columns)
     file_content = bytearray()
 
