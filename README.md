@@ -6,18 +6,23 @@ This code allows to read .dat files from Bruker Super-Resolution microscopes (Vu
 
 ## Loading the read and write functions
 
+```{python}
 from image_io_functions import readParticleFile, writeParticleFile
+```
 
 ## Read a dat binary file as a pandas dataframe file with df_to_dat.py
 
-** how to run example **
+*how to run example*
 
+```{python}
 df = readParticleFile("PATH/TO/particles.dat")
-
+```
 
 ## Save a pandas dataframe as a binary dat file with df_to_dat.py
 
-** how to run example **
+*how to run example*
 
+```{python}
 writeParticleFile(df, "PATH/TO/particles.dat", file_ext=".dat")
+```
 
